@@ -1,0 +1,94 @@
+@use "../../shared/scss/" as *;
+
+.card {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: 34px;
+
+  &__wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 205px;
+    height: 246px;
+    background: $white;
+    border-radius: 14px;
+    padding: 40px;
+    gap: 0px;
+
+    &--logo {
+      width: fit-content;
+      height: 30px;
+      object-fit: scale-down;
+      margin-bottom: 16px;
+    }
+
+    &--subscription {
+      color: $black;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    &--details {
+      color: $black;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    &--cost {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    &--value {
+      color: $black;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    &--period {
+      color: $black;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+
+.yellow {
+  position: absolute;
+  z-index: 0;
+  width: 285px;
+  height: 326px;
+  left: -24px;
+  top: -24px;
+  border-radius: 14px;
+  background-color: $yellow;
+}
+
+.pink {
+  position: absolute;
+  z-index: 0;
+  width: 285px;
+  height: 326px;
+  left: -24px;
+  top: -24px;
+  border-radius: 14px;
+  background-color: $pink;
+}
+
+.blue {
+  position: absolute;
+  z-index: 0;
+  width: 285px;
+  height: 326px;
+  left: -24px;
+  top: -24px;
+  border-radius: 14px;
+  background-color: $blue;
+}

@@ -21,7 +21,7 @@ const Card = (props) => {
           <span className="card__wrap--period">{props.period}</span>
         </div>
 
-        <Button content="Add subscription" />
+        <Button onClick={props.onClick} content="Add subscription" />
       </div>
 
       <div className={props.background}></div>
